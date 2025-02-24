@@ -1,0 +1,56 @@
+[manager]
+show_hidden = true
+sort_dir_first = true
+
+[preview]
+enable = true
+max_width = 100
+max_height = 40
+cache_dir = "~/.cache/yazi/previews"
+
+
+
+
+
+
+[opener]
+edit = [
+    { run = 'nvim "$@"', desc = "Neovim", block = true, for = "unix" }
+]
+play = [
+    { run = 'vlc "$@"', orphan = true, desc = "VLC", for = "unix" }
+]
+open = [
+    { run = 'feh "$@"', desc = "feh (image viewer)", for = "unix" }
+]
+
+pdf = [
+    { run = 'brave --new-tab "$@"', orphan = true, desc = "Brave Browser", for = "unix" }
+]
+
+
+[open]
+rules = [
+    # Folder
+    { name = "*/", use = ["edit", "open", "reveal"] },
+    # Text files (open in Neovim)
+    { mime = "text/*", use = ["edit"] },
+    # Images (open in feh)
+    { mime = "image/*", use = ["open"] },
+    # Videos (open in VLC)
+    { mime = "video/*", use = ["play"] },
+    # Audio (open in VLC if needed)
+    { mime = "audio/*", use = ["play"] },
+    # PDFs (open in Brave)
+    { mime = "application/pdf", use = ["pdf"] },
+    # Archive files
+    { mime = "application/{,g}zip", use = ["extract", "reveal"] },
+    { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", use = ["extract", "reveal"] },
+    # JSON
+    { mime = "application/{json,x-ndjson}", use = ["edit"] },
+    { mime = "*/javascript", use = ["edit"] },
+    # Empty file
+    { mime = "inode/x-empty", use = ["edit"] },
+    # Fallback
+    { name = "*", use = ["open", "reveal"] },
+]
