@@ -1,8 +1,8 @@
 {
     "DesktopAudioDevice1": {
-        "prev_ver": 520093697,
+        "prev_ver": 520093699,
         "name": "Desktop Audio",
-        "uuid": "7c3c511a-6f91-43bb-96ca-fc3f500ebee7",
+        "uuid": "1f120fe0-9777-4dbb-bc66-ab4e4a9bf92c",
         "id": "pulse_output_capture",
         "versioned_id": "pulse_output_capture",
         "settings": {
@@ -11,7 +11,7 @@
         "mixers": 255,
         "sync": 0,
         "flags": 0,
-        "volume": 0.018334042280912399,
+        "volume": 0.009558895602822304,
         "balance": 0.5,
         "enabled": true,
         "muted": false,
@@ -31,9 +31,9 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 520093697,
+        "prev_ver": 520093699,
         "name": "Mic/Aux",
-        "uuid": "c7a9e099-c48e-4c9d-a387-74c4dbc2e274",
+        "uuid": "0ac8fa67-27d0-4bde-9713-0c85a93d15ae",
         "id": "pulse_input_capture",
         "versioned_id": "pulse_input_capture",
         "settings": {
@@ -62,9 +62,9 @@
         "private_settings": {},
         "filters": [
             {
-                "prev_ver": 520093697,
+                "prev_ver": 520093699,
                 "name": "Noise Suppression",
-                "uuid": "0dcead15-881f-4751-b336-d4ca694b09f2",
+                "uuid": "76d2096f-b95a-4275-86a9-b34b810c6964",
                 "id": "noise_suppress_filter",
                 "versioned_id": "noise_suppress_filter_v2",
                 "settings": {},
@@ -97,18 +97,18 @@
     "name": "Untitled",
     "sources": [
         {
-            "prev_ver": 520093697,
+            "prev_ver": 520093699,
             "name": "Scene",
-            "uuid": "70d36f60-9b65-4e2d-8518-1dfe85ee4eb3",
+            "uuid": "89a8e63c-b248-4e3d-994f-e9ec09562a9d",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 2,
+                "id_counter": 1,
                 "custom_size": false,
                 "items": [
                     {
                         "name": "Display Capture (XSHM)",
-                        "source_uuid": "9a8c9862-962e-4202-8cf6-17538125d1fd",
+                        "source_uuid": "866b9e4b-4680-43ee-9305-2eafe45f0fc3",
                         "visible": true,
                         "locked": false,
                         "rot": 0.0,
@@ -160,61 +160,6 @@
                             "duration": 0
                         },
                         "private_settings": {}
-                    },
-                    {
-                        "name": "Video Capture Device (PipeWire) (BETA)",
-                        "source_uuid": "eb10205a-d902-4852-acab-34f14917d9ee",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 1920.0,
-                            "y": 1080.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 2,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 1302.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": 0.63333332538604736,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
                     }
                 ]
             },
@@ -232,9 +177,7 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.show_scene_item.1": [],
-                "libobs.hide_scene_item.1": [],
-                "libobs.show_scene_item.2": [],
-                "libobs.hide_scene_item.2": []
+                "libobs.hide_scene_item.1": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -242,42 +185,13 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 520093697,
+            "prev_ver": 520093699,
             "name": "Display Capture (XSHM)",
-            "uuid": "9a8c9862-962e-4202-8cf6-17538125d1fd",
+            "uuid": "866b9e4b-4680-43ee-9305-2eafe45f0fc3",
             "id": "xshm_input_v2",
             "versioned_id": "xshm_input_v2",
             "settings": {
                 "screen": 0
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 520093697,
-            "name": "Video Capture Device (PipeWire) (BETA)",
-            "uuid": "eb10205a-d902-4852-acab-34f14917d9ee",
-            "id": "pipewire-camera-source",
-            "versioned_id": "pipewire-camera-source",
-            "settings": {
-                "device_id": "v4l2_input.pci-0000_00_14.0-usb-0_8_1.0",
-                "pixelformat": 4,
-                "resolution": "{\"width\":640,\"height\":480}",
-                "framerate": "{\"framerate\":{\"numerator\":30.0,\"denominator\":1.0}}"
             },
             "mixers": 0,
             "sync": 0,
@@ -330,9 +244,6 @@
     "scaling_level": 0,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
-    "virtual-camera": {
-        "type2": 3
-    },
     "modules": {
         "scripts-tool": [],
         "output-timer": {

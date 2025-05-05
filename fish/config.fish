@@ -1,9 +1,6 @@
 set -g fish_greeting
 
-if status is-interactive
-    starship init fish | source
-end
-
+oh-my-posh init fish --config /home/ziad/.cache/oh-my-posh/themes/material.omp.json | source
 
 function fzf_cd
     # Search for directories starting from ~/
@@ -14,7 +11,6 @@ function fzf_cd
         cd "$dir"
     end
 end
-
 
 bind \cd fzf_cd
 
